@@ -27,10 +27,18 @@ At the end of this tutorial, you have two C apps:
 To complete this tutorial, you need the following:
 
 * An active Azure account. (If you don't have an account, you can create an [Azure free account](https://azure.microsoft.com/pricing/free-trial/) in just a couple of minutes.)
-* An IoT Hub.
+
 * The latest [Azure IoT C SDK](https://github.com/Azure/azure-iot-sdk-c).
 
-You have now created your IoT hub, and you have the host name and IoT Hub connection string that you need to complete the rest of this tutorial.
+## Create an IoT hub
+
+[!INCLUDE [iot-hub-include-create-hub](../../includes/iot-hub-include-create-hub.md)]
+
+## Get the IoT hub connection string
+
+[!INCLUDE [iot-hub-howto-module-twin-shared-access-policy-text](../../includes/iot-hub-howto-module-twin-shared-access-policy-text.md)]
+
+[!INCLUDE [iot-hub-include-find-registryrw-connection-string](../../includes/iot-hub-include-find-registryrw-connection-string.md)]
 
 ## Create a device identity and a module identity in IoT Hub
 
@@ -171,9 +179,9 @@ This app creates a device identity with ID **myFirstDevice** and a module identi
 
 In this section, you create a C app on your simulated device that updates the module twin reported properties.
 
-1. **Get your module connection string** -- now if you login to [Azure portal](https://portal.azure.com). Navigate to your IoT Hub and click IoT Devices. Find myFirstDevice, open it and you see myFirstModule was successfuly created. Copy the module connection string. It is needed in the next step.
+1. **Get your module connection string** -- now if you login to [Azure portal](https://portal.azure.com). Navigate to your IoT Hub and click IoT Devices. Find myFirstDevice, open it and you see myFirstModule was successfully created. Copy the module connection string. It is needed in the next step.
 
-    ![Azure portal module detail](./media/iot-hub-csharp-csharp-module-twin-getstarted/module-detail.JPG)
+    ![Azure portal module detail](./media/iot-hub-c-c-module-twin-getstarted/module-detail.png)
 
 2. **Create UpdateModuleTwinReportedProperties app**
 Add the following `using` statements at the top of the **Program.cs** file:

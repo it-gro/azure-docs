@@ -1,7 +1,7 @@
 ---
 title: 'Azure Backup: Create Recovery Services vaults using REST API'
 description: manage backup and restore operations of Azure VM Backup using REST API
-services: backup
+
 author: pvrk
 manager: shivamg
 keywords: REST API; Azure VM backup; Azure VM restore;
@@ -23,7 +23,7 @@ PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{
 
 ## Create a request
 
-To create the *PUT* request, the `{subscription-id}` parameter is required. If you have multiple subscriptions, see [Working with multiple subscriptions](/cli/azure/manage-azure-subscriptions-azure-cli?view=azure-cli-latest#working-with-multiple-subscriptions). You define a `{resourceGroupName}` and `{vaultName}` for your resources, along with the `api-version` parameter. This article uses `api-version=2016-06-01`.
+To create the *PUT* request, the `{subscription-id}` parameter is required. If you have multiple subscriptions, see [Working with multiple subscriptions](/cli/azure/manage-azure-subscriptions-azure-cli?view=azure-cli-latest). You define a `{resourceGroupName}` and `{vaultName}` for your resources, along with the `api-version` parameter. This article uses `api-version=2016-06-01`.
 
 The following headers are required:
 
